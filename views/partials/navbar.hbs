@@ -1,0 +1,22 @@
+  {{!-- задаем цвет --}}
+  <nav class='blue darken-4'> 
+    <div class="nav-wrapper">
+      <a href="/" class="brand-logo">Napi</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+{{!-- проверка на активность кнопки --}}
+        {{#if isIndex}}
+        <li class='active'><a href="/">Napi</a></li>
+        {{else}}
+        <li><a href="/">Napi</a></li>
+        {{/if}}
+        
+        {{#if isApis}}
+        <li class='active'><a href="/apis">Apis</a></li>
+        {{else}}
+        <li><a href="/apis">Apis</a></li>
+        {{/if}}
+        
+
+      </ul>
+    </div>
+  </nav>
